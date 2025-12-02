@@ -10,7 +10,7 @@ git commit -m "메시지"
 git push origin 브랜치명
 
 # git의 인증방법 2가지
-# 1.웹을 통한 인증(토큰 간접 발급) 2. 직접 토근 발급
+# 1.웹을 통한 인증(토큰 간접 발급) 2. 직접 토큰 발급
 
 
 # 사용자지정
@@ -27,9 +27,20 @@ git init
 # 2-2) 원격지 주소 추가
 git remote add origin 원격지주소
 
+# 다른 repo에서 clone을 받아 나의 repo로 올리기
+# 1. 커밋이력 그대로 가져가기 : test1 repo
+git clone 레포주소
+git remote set-url origin 레포주소 # 원격지 주소 변경
+git branch # 브랜치 메인인지 확인
+git push origin main
 
 
-
+# 2. 커밋이력 없이 가져가기 : test2 repo
+# .git 폴더 삭제
+git init
+git remote add origin 원격지주소
+git checkout -b main #main브랜치 생성 및 변경
+# git add, git commit, git push 작업 진행
 
 
 
