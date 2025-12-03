@@ -23,7 +23,7 @@ git config --list
 # git 프로젝트 생성방법 2가지
 # 1. 원격에서 repo 생성 후 clone
 # 2. 로컬에 이미 만들어진 프로젝트 github에 업로드
-git init
+git init # -> .git 파일이 생성됨
 # 2-2) 원격지 주소 추가
 git remote add origin 원격지주소
 
