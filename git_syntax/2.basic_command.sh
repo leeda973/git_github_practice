@@ -33,6 +33,18 @@ git checkout 커밋ID
 git checkoutt 브랜치명
 
 
+# 가장 최신의 커밋 취소
+git reset head~1
+git reset head^
+
+# 이미 push commit 사항을 되돌리는 새로운 commit 생성
+git revert 커밋ID
+
+
+
+
+
+
 
 
 
